@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <form action="/check" method="post">
+      <!--If i didn't mentioned method here then it will consider get
+      Also it will show that data in query which isn't suppose to happen as a result we choose post as a method-->
+      <div style="display: flex; flex-direction: column" class="">
+        <div class="text-3xl">
+          <input
+            type="text "
+            name="name"
+            class="border-solid border-2 border-black rounded-lg"
+          />
+        </div>
+        <div class="">
+          <input
+            type="text "
+            name="email"
+            class="border-solid border-2 border-black rounded-lg"
+          />
+        </div>
+        <div>
+          <button class="bg-black text-white py-1 rounded px-2" type="submit">
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
